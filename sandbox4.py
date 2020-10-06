@@ -1,9 +1,15 @@
+import random
+
+
+
+
 def main():
 
     file = open("silly.txt", 'r')
     read_file = file.readlines()
-    for line in read_file:
-        print(line)
+    random_line = random.choice(read_file)
+    print(random_line)
+
 
 
 
